@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "elk"
     config.ssh.insert_key = false
     config.vm.network "private_network", ip: "10.0.30.5"
-    config.vm.network "forwarded_port", guest: 80, host: 8080
+    #config.vm.network "forwarded_port", guest: 80, host: 8080
 
     # Forward para Elasticseach
     config.vm.network "forwarded_port", guest: 9200, host: 9200
